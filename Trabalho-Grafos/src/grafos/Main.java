@@ -9,12 +9,14 @@ public class Main {
 		//grafo.inserirAresta(0, 2);
 		//grafo.inserirAresta(1, 2);
 		
+		//System.out.println("-Antes da Remoção-");
 		//grafo.mostrarMatrizAdjacencia();
+		//System.out.println("-Depois da Remoção-");
 		//grafo.removerVertice(1);
 		//grafo.mostrarMatrizAdjacencia();
 		
-		//System.out.println(grafo.verificarConexo());
 		//System.out.println(grafo.verificarCompleto());
+		//System.out.println(grafo.verificarConexo());
 		
 		/*
 		MatrizAdjacencia grafoPonderado = new MatrizAdjacencia(5, true, true);
@@ -50,6 +52,29 @@ public class Main {
 		*/
 		
 		/*
+		MatrizAdjacencia grafoNaoEuleriano = new MatrizAdjacencia(4, false, false);
+		grafoNaoEuleriano.inserirAresta(0, 1);
+		grafoNaoEuleriano.inserirAresta(1, 2);
+		grafoNaoEuleriano.inserirAresta(2, 3);
+		grafoNaoEuleriano.inserirAresta(3, 0);
+		grafoNaoEuleriano.inserirAresta(1, 3);
+		grafoNaoEuleriano.inserirAresta(0, 2);
+
+		System.out.println(grafoNaoEuleriano.verificarEulerianidade());
+		*/
+		
+		/*
+		MatrizAdjacencia grafoSemiEuleriano = new MatrizAdjacencia(4, false, false);
+		grafoSemiEuleriano.inserirAresta(0, 1);
+		grafoSemiEuleriano.inserirAresta(1, 2);
+		grafoSemiEuleriano.inserirAresta(2, 3);
+		grafoSemiEuleriano.inserirAresta(3, 0);
+		grafoSemiEuleriano.inserirAresta(1, 3);
+
+		System.out.println(grafoSemiEuleriano.verificarEulerianidade());
+		*/
+		
+		/*
         MatrizAdjacencia grafoSemiHamiltoniano = new MatrizAdjacencia(5, false, false);
         grafoSemiHamiltoniano.inserirAresta(0, 1);
         grafoSemiHamiltoniano.inserirAresta(1, 2);
@@ -58,7 +83,17 @@ public class Main {
         System.out.println(grafoSemiHamiltoniano.verificarHamiltonianidade());
 		*/
 		
-		/*ex2a
+		/*
+		MatrizAdjacencia grafoSemiHamiltoniano = new MatrizAdjacencia(5, false, false);
+		grafoSemiHamiltoniano.inserirAresta(0, 1);
+		grafoSemiHamiltoniano.inserirAresta(1, 2);
+		grafoSemiHamiltoniano.inserirAresta(2, 3);
+		grafoSemiHamiltoniano.inserirAresta(3, 4);
+
+		System.out.println(grafoSemiHamiltoniano.verificarHamiltonianidade());
+		*/
+		
+		/*
 		MatrizAdjacencia grafo = new MatrizAdjacencia(5, true, true);
 		grafo.inserirAresta(0, 4, 10);
 		grafo.inserirAresta(0, 1, 1);
@@ -73,7 +108,7 @@ public class Main {
 		grafo.dijkstra(0, 4);
 		*/
 		
-		/*ex2b
+		/*
 		MatrizAdjacencia grafo = new MatrizAdjacencia(6, true, true);
 		grafo.inserirAresta(0, 1, 15);
 		grafo.inserirAresta(0, 2, 9);
@@ -87,6 +122,7 @@ public class Main {
 		grafo.dijkstra(0, 5);
 		*/
 		
+	
 		MatrizAdjacencia grafo = new MatrizAdjacencia(18, true, false);
 		grafo.inserirAresta(0, 1, 170);
 		grafo.inserirAresta(0, 3, 260);
@@ -120,5 +156,6 @@ public class Main {
 		grafo.inserirAresta(17, 14, 100);
 		grafo.inserirAresta(14, 15, 140);
 		grafo.dijkstra(4, 17);
+
 	}
 }
